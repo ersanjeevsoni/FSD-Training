@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS</title>
+    <style>
+        #content h1{ color: aqua;}
+        #content p{ color: blue;}
+        /* .article-box{ background-color:blueviolet} */
+        /* using Pseudo class that define a special state of an element */
+        .article-box p:nth-child(odd){ background-color: bisque;}
+        .article-box p:nth-child(even){ background-color: #999;}
+        #hdng-title{ color: red !important;}
+
+        /* .art-box{ background-color: bisque;} */
+
+        /* using through compund selector */
+        /* just to overcome the Specificity of inline css used important rule */
+        .article-box.art-box{ background-color: rgb(129, 80, 20) !important;}
+
+        /* visit to check Specificity of selectors https://www.w3schools.com/css/css_specificity.asp */
+
+    </style>
+</head>
+<body>
+    <!--selectors-->
+    <main id="content">
+        <article class="article-box ">
+        <!-- <h1 id="hdng-title">Welcome to the Page</h1> -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, nulla odio? Consectetur quibusdam ex odit consequuntur nisi veniam eum vitae et, ut ratione numquam. Voluptas doloribus fugit cupiditate voluptates ex!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, nulla odio? Consectetur quibusdam ex odit consequuntur nisi veniam eum vitae et, ut ratione numquam. Voluptas doloribus fugit cupiditate voluptates ex!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, nulla odio? Consectetur quibusdam ex odit consequuntur nisi veniam eum vitae et, ut ratione numquam. Voluptas doloribus fugit cupiditate voluptates ex!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, nulla odio? Consectetur quibusdam ex odit consequuntur nisi veniam eum vitae et, ut ratione numquam. Voluptas doloribus fugit cupiditate voluptates ex!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, nulla odio? Consectetur quibusdam ex odit consequuntur nisi veniam eum vitae et, ut ratione numquam. Voluptas doloribus fugit cupiditate voluptates ex!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, nulla odio? Consectetur quibusdam ex odit consequuntur nisi veniam eum vitae et, ut ratione numquam. Voluptas doloribus fugit cupiditate voluptates ex!</p>
+     </article>
+     <hr>
+
+     <article class="article-box art-box" style="background-color: aqua;">
+        <h1 id="hdng-title">Welcome to the Page 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, nulla odio? Consectetur quibusdam ex odit consequuntur nisi veniam eum vitae et, ut ratione numquam. Voluptas doloribus fugit cupiditate voluptates ex!</p>
+     </article>
+     <hr>
+
+     <article class="article-box">
+        <h1 id="hdng-title">Welcome to the Page 2</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, nulla odio? Consectetur quibusdam ex odit consequuntur nisi veniam eum vitae et, ut ratione numquam. Voluptas doloribus fugit cupiditate voluptates ex!</p>
+     </article>
+     <hr>
+     <article class="article-box">
+        <h1 id="hdng-title">Welcome to the Page 3</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, nulla odio? Consectetur quibusdam ex odit consequuntur nisi veniam eum vitae et, ut ratione numquam. Voluptas doloribus fugit cupiditate voluptates ex!</p>
+     </article>
+
+    </main>
+</body>
+</html>
