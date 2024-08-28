@@ -1,0 +1,41 @@
+body{
+    background-color: antiquewhite;
+}
+*{ margin: 0px; padding: 0px; box-sizing: border-box;}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    /* align-items:center; */
+    align-items:center;
+    gap: 5px;
+    flex-wrap: nowrap;
+    background-color: aqua;
+    height: 400px;
+    text-align: center;
+    /* line-height: 100px */
+}
+
+main div{
+    background-color: azure;
+    border: 1px solid #000;
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
+   
+}
+
+/* when you want to give remaining space to child3 then use flex-grow */
+/* .child3{
+    flex-grow: 1;
+} */
+/* .child1,.child2,.child4{
+  
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+} */
+
+main div h3{ vertical-align: bottom;}
+p{ border: 1px solid #999;}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            padding: 0px 20px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 140px 500px 100px;
+            gap: 5px;
+            justify-content: center;
+
+        }
+
+        nav,
+        aside,
+        section,
+        footer {
+            background-color: #999;
+        }
+
+        nav,
+        aside,
+        section,
+        footer,
+        h2 {
+            color: #dd1f1f;
+            align-content: center;
+        }
+
+        /* nav {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        } */
+         aside{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 5px;
+
+         }
+         .child{ background-color: #dd1f1f; height: 500px; color: #888; }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <h2>Nav Bar</h2>
+        </nav>
+        <aside>
+            <div class="child">Box1</div>
+            <div class="child">Box2</div>
+        </aside>
+      
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+        <!-- <div class="b5"><h2>Box 5</h2></div> -->
+        <!-- <div class="b6"><h2>Box 6</h2></div> -->
+
+
+
+    </main>
+
+</body>
+
+</html>

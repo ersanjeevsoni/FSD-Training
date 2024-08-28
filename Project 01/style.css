@@ -1,0 +1,273 @@
+
+        body,*,html{
+            margin: 0px; padding: 0px; box-sizing: border-box;
+        }
+        header{
+           
+            padding: 0px 25px;
+        }
+        h1,h2,h3,h4{ margin: 10px 0px;}
+
+        nav {
+            display: flex;
+            column-gap: 42px;
+            margin: 20px 0px 0px 20px;
+            justify-content: space-around;
+            padding-bottom: 10px;
+        }
+
+        #top-nav-list ul{ display: flex; list-style: none;}
+        #top-nav-list ul li{ margin: 0px 15px;}
+        #top-nav-list ul li a{ text-decoration: none; color: #74767e;   font-size:18px;
+            line-height: 40px;
+           font-family:  Macan, "Helvetica Neue", Helvetica, Arial, sans-serif
+        }
+            #top-nav-list ul li a:hover{
+            cursor: pointer;  color: rgb(35, 151, 35);
+
+            }
+        #top-nav-list .active{ color: #000; font-size: 20px; font-weight: bold;}
+
+        #h1 {
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 600;
+         
+        }
+
+        #input {
+            width: 430px;
+            height: 40px;
+            font-size: 17px;
+            padding-left: 20px;
+            border-radius: 5px;
+            border: 1px ridge grey;
+        }
+
+        #button {
+            width: 85px;
+            height: 40px;
+            font-weight: 900;
+            font-size: 18px;
+            border: 1px solid rgb(35, 151, 35);
+            background-color: white;
+            border-radius: 10px;
+            color: rgb(32, 155, 32);
+        }
+
+        #button:hover {
+            background-color: rgb(32, 155, 32);
+            color: white;
+            cursor: pointer;
+        }
+
+
+        #nav-link{
+           width: 100%;
+            font-size: 19px;
+            padding:0px 20px;
+            border-top: 1px ridge  rgb(156, 151, 151);
+            border-bottom: 1px ridge rgb(192, 181, 181);
+            margin-bottom: 20px;
+            box-shadow: 0px 1px 1px grey;
+        
+        }
+        #nav-link ul{
+            list-style: none; display: flex; justify-content: space-between;
+        }
+
+
+        .nav-link-item{
+       padding: 5px 0px;
+       }
+        .div_elements:hover{
+            color: rgb(23, 58, 3);
+            cursor: pointer;
+            border-bottom: solid rgb(35, 151, 35);
+        } 
+        #main_div{
+            display: flex;
+        }
+        
+        #div1{
+            margin-left:30px;
+            width: 60%;
+        }
+        #pradeep_img{
+            width: 200px; height: 200px;
+        }
+        #imgignite{
+            width: 200px; height: 200px; border-radius: 100%;
+            border: 1px solid rgb(201, 197, 197);
+        }
+        .flex{
+            display: flex;
+            gap: 20px;
+        }
+        .p{
+            font-size: 18px;
+            margin: 0px;
+            text-align: justify;
+            color: rgb(56, 53, 53);
+        }
+        #button_div{
+            display: flex;
+            gap: 10px;
+        }
+        #button_div ul{ list-style: none; display: flex; text-align: center;}
+        #button_div li{ margin: 0px 10px; font-weight: bold;}
+        .skill_button{
+            width: 200px;
+            height: 35px;
+            border-radius: 50px;
+            border: 1px ridge rgb(180, 178, 178);
+            background-color: white;
+            font-size: 14px;
+            color: rgb(78, 71, 71); line-height:35px;
+        }
+        .skill_button:hover{
+            background-color: rgb(231, 229, 229);
+            cursor: pointer;
+        }
+        #div2{
+            width: 40%;
+            padding:30px 3%;
+        }
+        #but{
+            width: 150px;
+            float: right;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid rgb(170, 164, 164);
+            background-color: white;
+            font-size: 16px;
+        }
+        #but:hover{
+            background-color: rgb(248, 248, 248);
+            cursor: pointer;
+        }
+        .div2_inside_div{
+            margin-top: 80px;
+            border: 1px solid rgb(223, 222, 222);
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px rgb(134, 129, 129);
+            padding: 10px 20px;
+        }
+        #Contact_button{
+            background-color: rgb(31, 26, 26);
+            color: white;
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0px auto;
+            padding:0px;
+        }
+        .para{
+            font-size: 20px;
+            color: rgb(97, 94, 94); 
+            margin-left: 100px;
+        }
+        .section{
+            margin: 50px 30px;
+        }
+        .img{
+            border-radius: 5px;
+            border: 1px solid rgb(212, 210, 210)  ;
+        }
+       
+        .image_div{
+           width: 300px;
+        }
+        .position{
+            position: relative;
+            top: -20px;
+            font-size: 18px;
+            color: rgb(41, 40, 40);
+        }
+        .input_range{
+            width: 300px;
+            color: rgb(41, 40, 40);
+        }
+        .flex_range{
+            display: flex;
+            gap: 20px;
+            height: 30px;
+        }
+        .heading{
+            position: relative;
+            top: -20px;
+            margin-bottom: 0px;
+        }
+        .td{
+            width: 300px;
+            color: rgb(87, 84, 84);
+            font-size: 20px;
+        }
+        #search{
+            width: 350px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px ridge rgb(172, 169, 169);
+            font-size: 16px;
+            padding-left: 10px;
+        }
+       .section_div{
+        padding:0px 30px;
+        border: 1px solid rgb(212, 209, 209);
+        border-radius: 20px;
+       }
+       .border{
+        border-top: 1px solid rgb(206, 202, 202);
+        border-bottom: 1px solid rgb(197, 193, 193);
+        
+       }
+       .reviews{
+        font-size: 20px;
+        color: rgb(112, 110, 110);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+       }
+       .price_duration_border{
+        border-right: 1px solid rgb(197, 195, 195);
+        height: 50px;
+        width: 135px;
+        
+       }
+       .h_margin{
+        margin: 0px;
+       }
+       .p_margin{
+        margin-top: 10px;
+       }
+        .web_button{
+            width: auto;
+            height: 40px;
+            border: 1px solid rgb(218, 210, 210);
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px rgb(206, 204, 204);
+            background-color:white;
+            padding: 5px;
+           
+        }
+        .web_button img{ float: left; border-radius: 10px;}
+        .web_button span{ margin-left:5px; line-height: 40px;}
+
+        footer{
+            padding: 0px 20px;
+            font-size: 18px;
+            display: flex; flex-wrap: wrap;
+            justify-content: space-between;
+            color: #74767e;
+            font-family: Macan, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        footer h3{color: #000;}
+
+        .ftr-list{
+            list-style: none;
+        }
+
+        .ftr-list li{ line-height: 40px;}
+       
+
+

@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* postion relative asssignemnt 01 */
+/* .parent{ border: 1px violet solid; width: 200px; height: 200px; margin-bottom: 10px;}
+.c1,.c2,.c3,.c4{ border: 2px blue solid; height: 50px; width: 50px;}
+.c2{ position: relative; left: 50px;}
+.c3{ position:relative; right:-50px;} */
+
+/* postion absolute and fixed asssignemnt 02 */
+/* body{ height: 300vh;} */
+/* .parent{ border: 1px violet solid; width: 200px; height: 200px; margin-bottom: 10px;} */
+/* .c1,.c2,.c3,.c4{ border: 2px blue solid; height: 50px; width: 50px;} */
+/* .c2{ position: relative; top: -20px; left: 50px;} */
+/* .c3{top: 0px; right: 0; position: absolute; } */
+/* .c3{top: 0px; right: 0; position: fixed; } */
+
+
+/* postion absolute and fixed asssignemnt 03 */
+/* .parent{ border: 1px violet solid; width: 200px; height: 200px; margin-bottom: 10px;}
+      .c1,.c2,.c3,.c4{ border: 2px blue solid; height: 50px; width: 50px;}
+      .c2{ position: absolute; top: 0; left: 0; z-index: 0; background-color: aqua;}
+      .c1{ position: relative; z-index: 1; background-color: aquamarine; } */
+
+
+/* postion sticky asssignemnt 04 */
+
+.parent {
+    border: 1px violet solid;
+    height: 200vh;
+    margin-bottom: 20px;
+    background-color: beige;
+
+}
+
+.child {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* position: fixed; */
+    position: sticky;
+    top: 100px;
+}
+
+div{ height: auto;
+width: 50vw; margin: auto; 
+background-color: antiquewhite;
+padding: 10px;}
+
+button{ background-color: red; 
+    padding: 10px 40px; border-radius: 10px;}
+
+@media(500px < width<=768px) {
+   div{ background-color: #999;
+   }
+   h1{ font-size: 24px;}
+   button{
+    background-color: blue; padding: 10px 20px;
+   }
+}
+
+@media(width<=500px) {
+    *{ color: #a72e2e;
+    }
+    
+ }
+
+
+.ball{
+    height: 50px; width: 50px; border-radius: 50%;
+    background-color: #a72e2e;
+    animation-name: circulation;
+    animation-duration:4s;
+    position: absolute;
+    animation-delay:2ms ;
+  
+}
+@keyframes circulation{
+    from{
+        transform:translate(0px,0px);
+        scale:.5;
+    }
+    to{
+        transform:translate(500px,600px);
+        scale: 1.5;
+    }
+
+}
+
+
+.ball-right-bottom{
+ position: absolute;
+}

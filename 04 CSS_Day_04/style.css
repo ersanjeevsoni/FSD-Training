@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(230, 230, 230);
+}
+main{ height: 1200px; background-color: antiquewhite;}
+
+*,
+html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* color: rgb(229, 41, 173); */
+}
+
+.heading {
+    color: #000;
+}
+
+#hd1 {
+    color: #dc1a1a;
+}
+
+h1 {
+    color: #999;
+}
+
+.hd2 {
+    color: #15d455;
+}
+
+.ht1 {
+    color: #751f7f;
+}
+
+.ht1.hd2 {
+    color: #e81010;
+}
+
+/* space selector */
+/* div p{ color: #bd4444;} */
+
+/* child selector */
+/* div>p{ color: #bd4444;} */
+
+/* genernal sibling selector */
+div~p {
+    color: #bd4444;
+}
+
+/* adjacent sibling selector (+) mean element should be at the same level */
+/* div+p{ color: #bd4444;} */
+h1 a {
+    text-decoration: none;  
+}
+/* works only for unvisited link */
+h1 a:link {
+    color: #751f7f;
+}
+h1 a:hover {
+    color: #999;
+}
+
+
+h1 a:focus {
+    color: #c0e715;
+}
+
+/* h1 a:visited{color:aqua;} */
+ul li {
+    color: aqua; line-height: 20px;
+}
+
+ul li:first-child {
+    color: #aeb90c; font-weight: bold;
+}
+
+ul li:last-of-type{
+    color: #15d455;
+}
+/* now we can style child of ul that is type of para */
+p:first-of-type{
+    color: blue;
+}
+div li:nth-child(odd){
+    background-color: #bd4444;
+}
+
+div li:nth-of-type(3){
+    background-color: #a51f79; font-size: x-large;
+}
+p::first-letter{ font-size: xx-large;}
+
+button {
+    background-color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 0px 3px rgb(17, 17, 18);
+    transition: all 400ms linear;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+button:hover {
+    background-color: #524c4c;
+    scale: 1.l2;
+}
