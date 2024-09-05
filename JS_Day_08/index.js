@@ -17,7 +17,8 @@ console.log("Hello World"); */
 
 //javascript variables :- var | let | const
 
-/* var name="Sanjeev";
+/* var name="Sanjeev"; // having var keyword..var variables are hoisted with a default value of undefined, which makes them accessible before their line of declaration.
+
 let name1="Sanjeev1";
 const name2="Sanjeev2";
 console.log(name,name1,name2); */
@@ -31,7 +32,7 @@ console.log(name,name1,name2); */
 //primitive:- number, srting, boolen , null, undefined, bigint, symbol
 //non-primitive: object
 let d=null; 
-// type of null is object and it is a bug in js but unable to remvoe it becox everything is oject in js where may loost lots of functionality so we contine with null as object
+// type of null is object and it is a bug in js but unable to remvoe it because everything is oject in js where may loost lots of functionality so we contine with null as object
 let e=undefined;
 let f=BigInt(24214124);
 let g=Symbol("Key_of_object"); //used to create to key in object

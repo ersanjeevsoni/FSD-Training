@@ -56,17 +56,17 @@ HTMLCollection(4) [h1, p, script, script] */
 
 // return only element or null in case of not available 
 // const result = document.getElementById("para");
-
-
 // console.log(result);
 
 //---------innerHTML and innerText both properrties are available in HTMLCollection so access the properties -----------------
 
+// const result = document.getElementById("para");
 /* console.log(result[0].innerText);
 console.log(result[1].innerText);
  */
-//-----------------modify the properties----------
 
+//-----------------modify the properties----------
+// const result = document.getElementById("para");
 /* result[0].innerText = "Welcome to React Class<b>Day 01</b>";
 console.log(result[0]);
 
@@ -82,11 +82,11 @@ console.log(result[1]); */
 // result[0].style.color = "blue";
 
 //----------------diffrent selector methods------
-const result=document.querySelectorAll("h1:first-child")
-console.log(result); // iterable NodeList
+//const result=document.querySelectorAll("h1:first-child")
+//console.log(result); // iterable NodeList
 
-const result1=document.querySelector("div>h1>i");
-console.log(result1); // retunr node
+//const result1=document.querySelector("div>h1>i");
+//console.log(result1); // retunr node
 
 
 // const result2 = document.getElementsByTagName("li");

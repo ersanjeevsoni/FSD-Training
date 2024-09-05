@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 04 | Form Evnent</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="login_form">
+        <!-- Login form container -->
+        <form action="#">
+          <h3>Sign UP with</h3>
+
+       
+       
+
+
+       <!-- User Name input box -->
+       <div class="input_box">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name"  onchange="handlechangeName(event)"/>
+        <!-- <input type="text" id="name" placeholder="Enter your name" value="" /> -->
+      </div>
+      <p id="nameMsg"></p>
+
+          <!-- Email input box -->
+          <div class="input_box">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email address" onchange="handlechangeEmail(event)"/>
+            <!-- <input type="email" id="email" placeholder="Enter email address" value=""/> -->
+          </div>
+          <p id="emailMsg"></p>
+
+          <!-- Paswwrod input box -->
+          <div class="input_box">
+            <div class="password_title">
+              <label for="password">Password</label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <input type="password" id="password" placeholder="Enter your password" value="" onchange="handlechangePwd(event)"/>
+            <!-- <input type="password" id="password" placeholder="Enter your password" value=""/> -->
+          </div>
+          <p id="pwdMsg"></p>
+
+               <!-- User Picture -->
+       <div class="input_box">
+        <label for="profile">Profile</label>
+        <input type="file" id="file"  onchange="handlechangePic(event)"/>
+        <img alt="" id="fileImg"/>
+
+           <!-- Login button -->
+          <button type="submit">Log In</button>
+          <!-- <button type="submit" onclick="handlechange()">Log In</button> -->
+          <p class="sign_up">Have an account? <a href="#">Sign in</a></p>
+        </form>
+      </div>
+    <script src="script.js" />
+</body>
+</html>
