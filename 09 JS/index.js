@@ -6,21 +6,21 @@
 // const-  not both redeclare and reassign
 //data types- primitive:- store value and non-primitive:- store references
 
-//type coercion:- autometic ot impliciit coversion of values from one data type to another
+//type coercion:- autometic or impliciit coversion of values from one data type to another
 // console.log("sanje" + "soni");
 //String
 // console.log(10 + '20'); 
 // 1020
 //number
 // console.log(10 - '2');  
-//8 but only happens in case of string + operator overload but in the other operator, result will be generated
+//8 but only happens in case of string +operator overloads but in case of  the other operators, result will be generated
 //see futher example to more understand type coercion
 // let ans = 10 + "20";
 // console.log(ans);
 // ans = "a" + "b";
 // console.log(ans);
 // ans = 'c' * 'd';
-// + op is overloded but not any other operator
+// +op is overloded but not any other operators.
 // console.log(ans); 
 
 

@@ -118,6 +118,7 @@ para1.setAttribute("class", "para");
 // const para=document.createElement("p");
 // get the parent
 // const divTag=document.getElementsByTagName("div");
+
 // add the element at the positon
 /* divTag[0].append(para);
 console.log(divTag);
