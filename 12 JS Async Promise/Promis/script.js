@@ -3,7 +3,7 @@
 
 //==========================JSON rules==================
 
-// all should be in "" and key should be in string not any number and no , at the last key value pair=======
+// all should be in "" and key should be in string not any number and no comma(,) at the last key value pair=======
 
 // Npte: when have to communicate in terms of API then data will be JSON formate earlier was in XML or others.
 
@@ -30,53 +30,67 @@ const errorCB=(res)=>{
 pr.then(successCB).catch(errorCB); */
 
 
-//======================================= get data and conver in to json on the browser=============
-// const url="https://api.github.com/users";
-// const pr = fetch(url);
+//======================================= get data and convert into json on the browser=============
+/* const url="https://api.github.com/users";
+const pr = fetch(url);
 
-// const successCB=(res)=>{
-//     console.log("success--->", res);
-    //const pr2=res.json(); // here it returs a promise.
-     //pr2.then(print); //to convert into exact json format using call back
-//    pr2.then((data)=>console.log("final dat",data)); //to convert into exact json format usnig arrow
-// }
-//pr.then(successCB);
-/* function print(data){
+const successCB=(res)=>{
+    console.log("success--->", res);
+    const pr2=res.json(); // here it returs a promise.
+    pr2.then(result); //to convert into exact json format using call back function that is result function 
+   //pr2.then((data)=>console.log("final dat",data)); //to convert into exact json format usnig arrow
+}
+pr.then(successCB); */
+
+/* function result(data){
     console.log("final data---",data); 
 } */
 //====or===
-/* const print=(data)=>{
+/* const result=(data)=>{
     console.log("final data---",data); 
 } */
-/////===========================modern way=======
-/* const url="https://api.github.com/users";
+
+   /*  const url="https://api.github.com/users";
+    const pr=fetch(url);
+        pr.then((res)=>{
+            console.log("Data fetched Succefuuly",res);
+            const pr2=res.json();
+            pr2.then((data)=>console.log("users final data",data));
+        }); */
+   
+
+//===========================modern way=================
+const url="https://api.github.com/users";
 const pr = fetch(url);
 pr.then((res)=>{
     console.log("success--->", res);
     const pr2=res.json(); 
     pr2.then((data)=>console.log("final dat",data));
      });
- */
-     //========================================display data of fetched API example=============
 
-    const getdata=()=>{
+
+//========================================example of display data of user using user's value under fetched API example=============
+
+/*     const getdata=()=>{
 
         const val= document.getElementById("search_id").value || 'ersanjeevsoni';
         fetch(`https://api.github.com/users/${val}`).then((res)=>{
                  res.json().then((data)=>{
                      display(data); // this one is when using seperated function to keep code seperate
                    
-                     // const myJSON = JSON.stringify(data); // to convert json data to object
-                    // document.getElementById("display").innerText= myJSON;
+                     const myJSON = JSON.stringify(data); // to convert json data to object
+                    document.getElementById("display").innerText= myJSON;
                         
 
-                    // will not work bcoz we converted into srting
-                    // document.getElementById("display").innerText= myJSON[0].login; 
-                     //document.getElementById("display").innerText= data[0].login; // so use here only data
+                    will not work bcoz we converted into srting
+                    document.getElementById("display").innerText= myJSON[0].login; 
+                     document.getElementById("display").innerText= data[0].login; // so use here only data
                  })
         });
     }
-    getdata();
+
+    // ================create a function to display user data creating tag dynamically
+    getdata(); */
 
 /*     function display(data){
         //when we sending data on html tag
@@ -98,7 +112,7 @@ pr.then((res)=>{
         parent.appendChild(title2);
     } */
 
-        function display(data){
+    /*     function display(data){
         const parent=document.getElementById("display");
 
             console.log(data);
@@ -114,4 +128,4 @@ pr.then((res)=>{
             image.setAttribute("class", "card-img");
             parent.appendChild(image);
             clearInterval();    
-        }
+        } */

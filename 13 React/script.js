@@ -25,7 +25,7 @@ fruit.style.margin='10px';
 const drink=document.createElement('li');
 drink.innerText="Drink";
 list.appendChild(drink);
-drink.style.margin='10px'; */
+drink.style.margin='10px'; */   
 
 //======================using React==============
 //const realRoot=document.getElementById('parent'); //JS Dom element
@@ -53,8 +53,21 @@ const root = ReactDOM.createRoot(realRoot);
 
 const item1 = React.createElement('li', { style: { color: 'red', fontSize:'18px' } }, 'vegetable');
 const item2 = React.createElement('li', {}, 'fruits');
-const item3 = React.createElement('li', {}, 'drinks');
-const item4 = React.createElement('li', {}, 'sweets');
+const item3 = React.createElement('li', {}, 'drinks'); */
+// const item4 = React.createElement('li', {}, 'vegetable'); 
+// just what is type we are getting. It returns object, see in browser output.
+
+// console.log(item4);
+//==================for the above code for item4, below code is same got in the browser=======
+/* const item4={
+    $$typeof: Symbol(react.element),
+    key: null,
+    props: {children: 'vegetable'},
+    ref: null,
+    type: "li",
+    _owner: null,
+    [[Prototype]]: Object
+    }
 
 const list = React.createElement('ul', { type:'square'}, [item1, item2, item3, item4]);
 
@@ -65,22 +78,6 @@ const container=eading = React.createElement('div', {}, [heading,list]); */
 // can not pass multiple element at the time of render because can render only one root element. so created container div element.
 // root.render([heading,list]); // instead of this on follow bottom
 // root.render(container);
-
-//=================understanding react ==================
-
-// const item4 = React.createElement('li', {}, 'vegetable'); // just what is type we are getting. It returns object, see in browser output.
-
-// console.log(item4);
-//==================for the above code for item4, below code is same got in the browser=======
-/* const item4={
-$$typeof: Symbol(react.element),
-key: null,
-props: {children: 'vegetable'},
-ref: null,
-type: "li",
-_owner: null,
-[[Prototype]]: Object
-} */
 
 //==========================jsx=========================
 //JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file.
