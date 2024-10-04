@@ -1,0 +1,27 @@
+.h1 {
+    color: brown;
+}
+
+.h2 {
+    color: blueviolet;
+}
+
+#card {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px
+}
+
+.box {
+    border: 1px solid #000;
+    padding: 5px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+.box p{ text-align: justify;}
+
+.box h2 {
+    text-align: center;
+    color: brown;
+}
